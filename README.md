@@ -38,6 +38,7 @@ Follow these simple steps to get your own copy of the project up and running on 
 
 Here's a quick overview of the project structure:
 
+``` 
 ancient-women-stem/
 ├── public/
 │ ├── index.html
@@ -56,7 +57,7 @@ ancient-women-stem/
 ├── ...
 ├── package.json
 └── README.md
-
+```
 ## 🤝 Contributing
 
 ## 📄 License
