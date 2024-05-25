@@ -16,7 +16,7 @@ Follow these simple steps to get your own copy of the project up and running on 
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/ancient-women-stem.git
+    git clone https://github.com/drunkcaterpillar/ancient-women-stem.git
     cd ancient-women-stem
     ```
 
