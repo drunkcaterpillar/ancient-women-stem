@@ -1,35 +1,38 @@
-import React from 'react';
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
-    jest: true, // Added this line to recognize Jest globals
+    es6: true, // Ensure this is correct and compatible
+    jest: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:jest/recommended',
     'prettier',
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 2018, // Ensure compatibility with es6
     sourceType: 'module',
   },
   plugins: [
     'react',
+    '@typescript-eslint',
     'jest',
-    'prettier'
+    'prettier',
   ],
   settings: {
     react: {
-      version: 'detect', // Added this line to detect the React version
+      version: 'detect',
     },
   },
   rules: {
     'prettier/prettier': 'error',
-    'react/react-in-jsx-scope': 'off', // Added this line to disable the rule requiring React in scope
+    'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off', // Optionally turn off this rule
   },
 };
